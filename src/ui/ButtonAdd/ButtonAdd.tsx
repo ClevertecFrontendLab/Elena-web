@@ -1,6 +1,6 @@
 import { Button, Flex, Image } from '@chakra-ui/react';
 
-import AddIcon from '../../assets/icons/Sidebar/add-icon.svg';
+import AddIcon from '~/assets/icons/Sidebar/add-icon.svg';
 
 export const ButtonAdd = () => (
     <Flex

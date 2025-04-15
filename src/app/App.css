@@ -1,49 +1,35 @@
-@font-face {
+#root {
     font-family: 'Inter', sans-serif;
-    src: url('../fonts/inter/Inter_18pt-Regular.ttf');
+}
+.scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.4);
 }
 
-*,
-*:before,
-*:after {
-    outline: none;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
+.scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
 }
 
-html {
-    height: 100%;
-    font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    width: 8px;
 }
 
-body {
-    overflow-x: hidden;
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
 }
 
-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
+.scrollbar-custom::-ms-scrollbar {
+    width: 8px;
 }
 
-button {
-    cursor: pointer;
+.scrollbar-custom::-ms-scrollbar-track {
+    background: rgba(0, 0, 0, 0.16);
 }
 
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-ul {
-    margin: 0;
-    list-style-type: none;
-}
-
-label {
-    cursor: pointer;
+.scrollbar-custom::-ms-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
 }
